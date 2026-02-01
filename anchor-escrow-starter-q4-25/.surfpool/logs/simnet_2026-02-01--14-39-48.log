@@ -1,0 +1,109 @@
+[2026-02-01--14-39-48 INFO actix_server::builder] starting 5 workers
+[2026-02-01--14-39-48 INFO actix_server::server] Tokio runtime found; starting in existing Tokio runtime
+[2026-02-01--14-39-48 INFO actix_server::server] starting service: "actix-web-service-127.0.0.1:18488", workers: 5, listening on: 127.0.0.1:18488
+[2026-02-01--14-39-49 INFO parity_ws] Listening for new connections on 127.0.0.1:8900.
+[2026-02-01--14-39-52 INFO txtx::svm::deploy_program] [Recovery Instructions] - An ephemeral authority account will be created and funded to write to the buffer account.
+[2026-02-01--14-39-52 INFO txtx::svm::deploy_program] [Recovery Instructions] - Please save the following information in case the deployment fails and the account needs to be recovered:
+[2026-02-01--14-39-52 INFO txtx::svm::deploy_program] [Recovery Instructions] - Ephemeral authority public key: SrVFsQR1xbKJp5X2tnF6XhUctEAHD1azbRgtxWKd3Sp
+[2026-02-01--14-39-52 INFO txtx::svm::deploy_program] [Recovery Instructions] - Ephemeral authority secret key: [219, 132, 38, 57, 120, 122, 68, 39, 140, 166, 157, 117, 34, 28, 194, 153, 49, 239, 221, 3, 75, 192, 8, 220, 227, 21, 58, 148, 128, 180, 238, 18, 6, 159, 121, 190, 46, 83, 29, 106, 231, 149, 184, 33, 149, 88, 185, 248, 185, 62, 198, 164, 128, 127, 181, 252, 224, 17, 118, 46, 59, 165, 114, 65]
+[2026-02-01--14-39-53 INFO txtx::svm::deploy_program] Account Created - Ephemeral authority account created and funded to write to buffer
+[2026-02-01--14-39-53 INFO txtx::svm::deploy_program] [Recovery Instructions] - Creating program buffer account at pubkey 9e8h5isCZQoHvU6WQsmPzJEMQoWjKJFAmuSrrYEU4ex6
+[2026-02-01--14-39-53 INFO txtx::svm::deploy_program] Account Created - Program buffer account created
+[2026-02-01--14-40-01 INFO txtx::svm::deploy_program] Buffer Ready - Writing to buffer account is complete
+[2026-02-01--14-40-07 INFO txtx::svm::deploy_program] Program Created - Program Ea4nnHJkwpA7Wp5KSE6ZCtL1994YqETAF9Fx8rZFTHrc has been deployed
+[2026-02-01--14-40-08 INFO txtx::svm::deploy_program] Complete - Ephemeral authority account closed and leftover funds returned to payer
+[2026-02-01--14-43-33 INFO actix_web::middleware::logger] 127.0.0.1 "GET / HTTP/1.1" 200 7612 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.012826
+[2026-02-01--14-43-33 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/webpack-cd9d82e885c4ebdc.js HTTP/1.1" 200 4721 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.000951
+[2026-02-01--14-43-33 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/css/0d143f211c7df892.css HTTP/1.1" 200 27323 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.005965
+[2026-02-01--14-43-33 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/b18b83b3-e1c480e403eefb06.js HTTP/1.1" 200 55445 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.008290
+[2026-02-01--14-43-33 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/main-app-f867690012ee20f6.js HTTP/1.1" 200 222 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.000257
+[2026-02-01--14-43-33 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/04c1a432-edb03f65b9f1a1ca.js HTTP/1.1" 200 2700 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.000496
+[2026-02-01--14-43-33 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/1365-1770d8165586a8c0.js HTTP/1.1" 200 7706 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.007480
+[2026-02-01--14-43-33 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/8298-3afc860dfe3c7887.js HTTP/1.1" 200 44395 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.011472
+[2026-02-01--14-43-33 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/app/layout-9fda25069afc2794.js HTTP/1.1" 200 12398 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.007391
+[2026-02-01--14-43-33 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/bd665b6f-d5ed9f4f3ae4ccb0.js HTTP/1.1" 200 14450 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.007182
+[2026-02-01--14-43-33 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/8250-8d8b91de503069bf.js HTTP/1.1" 200 8463 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.002367
+[2026-02-01--14-43-33 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/2791-26d0c10b12b568d6.js HTTP/1.1" 200 15050 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.002961
+[2026-02-01--14-43-33 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/8370-021758b1cd213679.js HTTP/1.1" 200 88250 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.014532
+[2026-02-01--14-43-33 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/8122-64562bcd06159a5c.js HTTP/1.1" 200 16899 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.006462
+[2026-02-01--14-43-33 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/69-2de999b83ce7b365.js HTTP/1.1" 200 80601 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.012079
+[2026-02-01--14-43-33 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/app/page-4a2892b714895647.js HTTP/1.1" 200 11473 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.002306
+[2026-02-01--14-43-34 INFO actix_web::middleware::logger] 127.0.0.1 "GET /assets/txtx.png HTTP/1.1" 200 4197 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.000259
+[2026-02-01--14-43-35 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:45270.
+[2026-02-01--14-43-35 INFO actix_web::middleware::logger] 127.0.0.1 "GET /config HTTP/1.1" 200 167 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.000535
+[2026-02-01--14-43-35 INFO actix_web::middleware::logger] 127.0.0.1 "GET /accounts.txt?_rsc=3lb4g HTTP/1.1" 200 1599 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.000555
+[2026-02-01--14-43-35 INFO actix_web::middleware::logger] 127.0.0.1 "GET /config HTTP/1.1" 200 167 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.000247
+[2026-02-01--14-43-35 INFO actix_web::middleware::logger] 127.0.0.1 "GET /scenarios.txt?_rsc=3lb4g HTTP/1.1" 200 1602 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.000710
+[2026-02-01--14-43-35 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/app/accounts/page-95a0936c2ea0cc61.js HTTP/1.1" 200 9964 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.002445
+[2026-02-01--14-43-35 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/app/scenarios/page-1f7657501a385f81.js HTTP/1.1" 200 8792 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.002669
+[2026-02-01--14-43-53 INFO actix_web::middleware::logger] 127.0.0.1 "GET / HTTP/1.1" 200 7612 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.002224
+[2026-02-01--14-43-53 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/webpack-cd9d82e885c4ebdc.js HTTP/1.1" 200 4721 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.001225
+[2026-02-01--14-43-53 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/main-app-f867690012ee20f6.js HTTP/1.1" 200 222 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.000333
+[2026-02-01--14-43-53 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/04c1a432-edb03f65b9f1a1ca.js HTTP/1.1" 200 2700 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.003697
+[2026-02-01--14-43-53 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/1365-1770d8165586a8c0.js HTTP/1.1" 200 7706 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.004634
+[2026-02-01--14-43-53 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/app/layout-9fda25069afc2794.js HTTP/1.1" 200 12398 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.003958
+[2026-02-01--14-43-53 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/css/0d143f211c7df892.css HTTP/1.1" 200 27323 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.011726
+[2026-02-01--14-43-53 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/8298-3afc860dfe3c7887.js HTTP/1.1" 200 44395 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.012212
+[2026-02-01--14-43-53 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/bd665b6f-d5ed9f4f3ae4ccb0.js HTTP/1.1" 200 14450 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.004853
+[2026-02-01--14-43-53 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/b18b83b3-e1c480e403eefb06.js HTTP/1.1" 200 55445 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.015140
+[2026-02-01--14-43-53 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/8250-8d8b91de503069bf.js HTTP/1.1" 200 8463 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.006321
+[2026-02-01--14-43-53 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/8370-021758b1cd213679.js HTTP/1.1" 200 88250 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.022560
+[2026-02-01--14-43-53 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/2791-26d0c10b12b568d6.js HTTP/1.1" 200 15050 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.006291
+[2026-02-01--14-43-53 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/69-2de999b83ce7b365.js HTTP/1.1" 200 80601 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.019153
+[2026-02-01--14-43-53 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/8122-64562bcd06159a5c.js HTTP/1.1" 200 16899 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.004077
+[2026-02-01--14-43-53 INFO actix_web::middleware::logger] 127.0.0.1 "GET /assets/txtx.png HTTP/1.1" 200 4197 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.000241
+[2026-02-01--14-43-53 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/app/page-4a2892b714895647.js HTTP/1.1" 200 11473 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.009870
+[2026-02-01--14-43-53 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:59790.
+[2026-02-01--14-43-53 INFO actix_web::middleware::logger] 127.0.0.1 "GET /config HTTP/1.1" 200 167 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.000335
+[2026-02-01--14-43-54 INFO actix_web::middleware::logger] 127.0.0.1 "GET /accounts.txt?_rsc=3lb4g HTTP/1.1" 200 1599 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.000615
+[2026-02-01--14-43-54 INFO actix_web::middleware::logger] 127.0.0.1 "GET /config HTTP/1.1" 200 167 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.000219
+[2026-02-01--14-43-54 INFO actix_web::middleware::logger] 127.0.0.1 "GET /scenarios.txt?_rsc=3lb4g HTTP/1.1" 200 1602 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.000454
+[2026-02-01--14-43-54 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/app/accounts/page-95a0936c2ea0cc61.js HTTP/1.1" 200 9964 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.002729
+[2026-02-01--14-43-54 INFO actix_web::middleware::logger] 127.0.0.1 "GET /_next/static/chunks/app/scenarios/page-1f7657501a385f81.js HTTP/1.1" 200 8792 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.001923
+[2026-02-01--14-45-31 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:49088.
+[2026-02-01--14-45-34 INFO txtx::svm::deploy_program] [Recovery Instructions] - An ephemeral authority account will be created and funded to write to the buffer account.
+[2026-02-01--14-45-34 INFO txtx::svm::deploy_program] [Recovery Instructions] - Please save the following information in case the deployment fails and the account needs to be recovered:
+[2026-02-01--14-45-34 INFO txtx::svm::deploy_program] [Recovery Instructions] - Ephemeral authority public key: CFZRc7gViN6tocXwZCBYirXupMNoZ4rf9QTEEFCZfi69
+[2026-02-01--14-45-34 INFO txtx::svm::deploy_program] [Recovery Instructions] - Ephemeral authority secret key: [109, 236, 200, 146, 174, 130, 54, 3, 196, 63, 90, 240, 182, 32, 128, 73, 85, 221, 182, 187, 156, 183, 224, 206, 249, 121, 231, 43, 87, 133, 229, 67, 167, 43, 89, 134, 194, 67, 241, 155, 204, 14, 123, 238, 17, 209, 153, 136, 216, 253, 122, 168, 124, 162, 44, 64, 17, 228, 140, 23, 143, 41, 58, 190]
+[2026-02-01--14-45-34 INFO txtx::svm::deploy_program] Account Created - Ephemeral authority account created and funded to write to buffer
+[2026-02-01--14-45-34 INFO txtx::svm::deploy_program] [Recovery Instructions] - Creating program buffer account at pubkey 4GxrATYoMQcqHJAhCR85GND4A9GPdewxR2BEewuDAyJT
+[2026-02-01--14-45-35 INFO txtx::svm::deploy_program] Account Created - Program buffer account created
+[2026-02-01--14-45-35 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:49102.
+[2026-02-01--14-45-44 INFO txtx::svm::deploy_program] Buffer Ready - Writing to buffer account is complete
+[2026-02-01--14-45-45 INFO txtx::svm::deploy_program] Buffer Authority Transferred - Buffer authority has been transferred to authority signer
+[2026-02-01--14-45-46 INFO txtx::svm::deploy_program] Program Upgraded - Program Ea4nnHJkwpA7Wp5KSE6ZCtL1994YqETAF9Fx8rZFTHrc has been upgraded
+[2026-02-01--14-45-46 INFO txtx::svm::deploy_program] Complete - Ephemeral authority account closed and leftover funds returned to payer
+[2026-02-01--14-45-48 INFO txtx::svm::deploy_program] [Recovery Instructions] - An ephemeral authority account will be created and funded to write to the buffer account.
+[2026-02-01--14-45-48 INFO txtx::svm::deploy_program] [Recovery Instructions] - Please save the following information in case the deployment fails and the account needs to be recovered:
+[2026-02-01--14-45-48 INFO txtx::svm::deploy_program] [Recovery Instructions] - Ephemeral authority public key: DNTPvXbP11XKoA6fR11YEnnt1kuEMywWB5NCfLGFMzWN
+[2026-02-01--14-45-48 INFO txtx::svm::deploy_program] [Recovery Instructions] - Ephemeral authority secret key: [223, 125, 242, 136, 105, 126, 128, 9, 62, 128, 252, 30, 13, 101, 94, 183, 67, 212, 61, 125, 154, 123, 32, 194, 90, 62, 114, 145, 130, 243, 171, 218, 183, 203, 73, 8, 22, 239, 15, 188, 10, 178, 17, 70, 168, 132, 165, 83, 227, 75, 117, 121, 50, 237, 49, 130, 28, 113, 161, 80, 249, 92, 220, 203]
+[2026-02-01--14-45-49 INFO txtx::svm::deploy_program] Account Created - Ephemeral authority account created and funded to write to buffer
+[2026-02-01--14-45-49 INFO txtx::svm::deploy_program] [Recovery Instructions] - Creating program buffer account at pubkey 4SyyLuVsA7PPesTjiBuqrTBjGjvas124uCWCKtBVdXyV
+[2026-02-01--14-45-50 INFO txtx::svm::deploy_program] Account Created - Program buffer account created
+[2026-02-01--14-45-58 INFO txtx::svm::deploy_program] Buffer Ready - Writing to buffer account is complete
+[2026-02-01--14-45-59 INFO txtx::svm::deploy_program] Buffer Authority Transferred - Buffer authority has been transferred to authority signer
+[2026-02-01--14-45-59 INFO txtx::svm::deploy_program] Program Upgraded - Program Ea4nnHJkwpA7Wp5KSE6ZCtL1994YqETAF9Fx8rZFTHrc has been upgraded
+[2026-02-01--14-46-00 INFO txtx::svm::deploy_program] Complete - Ephemeral authority account closed and leftover funds returned to payer
+[2026-02-01--14-46-21 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:47182.
+[2026-02-01--14-46-26 INFO txtx::svm::deploy_program] [Recovery Instructions] - An ephemeral authority account will be created and funded to write to the buffer account.
+[2026-02-01--14-46-26 INFO txtx::svm::deploy_program] [Recovery Instructions] - Please save the following information in case the deployment fails and the account needs to be recovered:
+[2026-02-01--14-46-26 INFO txtx::svm::deploy_program] [Recovery Instructions] - Ephemeral authority public key: 7ABTP4muVpMHBVhNJ7LfMY6fWevaZmBcrz7sBQn8EykN
+[2026-02-01--14-46-26 INFO txtx::svm::deploy_program] [Recovery Instructions] - Ephemeral authority secret key: [15, 128, 236, 221, 72, 231, 230, 192, 32, 197, 234, 176, 156, 253, 31, 7, 21, 118, 234, 88, 244, 78, 8, 95, 36, 103, 7, 30, 112, 61, 175, 103, 91, 128, 43, 143, 145, 241, 159, 60, 133, 73, 188, 209, 86, 88, 71, 192, 197, 191, 79, 21, 21, 141, 9, 130, 194, 196, 30, 153, 136, 8, 201, 11]
+[2026-02-01--14-46-26 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:47198.
+[2026-02-01--14-46-27 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:58392.
+[2026-02-01--14-46-28 INFO txtx::svm::deploy_program] Account Created - Ephemeral authority account created and funded to write to buffer
+[2026-02-01--14-46-28 INFO txtx::svm::deploy_program] [Recovery Instructions] - Creating program buffer account at pubkey Hy5kvuKTAr2FQoih3CgaENPQ3N5JpWpr6twbgUynJ2QN
+[2026-02-01--14-46-28 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:58400.
+[2026-02-01--14-46-29 INFO txtx::svm::deploy_program] Account Created - Program buffer account created
+[2026-02-01--14-46-29 ERROR litesvm] Program account 4SyyLuVsA7PPesTjiBuqrTBjGjvas124uCWCKtBVdXyV is not executable.
+[2026-02-01--14-46-30 ERROR litesvm] Program account 4SyyLuVsA7PPesTjiBuqrTBjGjvas124uCWCKtBVdXyV is not executable.
+[2026-02-01--14-46-38 INFO txtx::svm::deploy_program] Buffer Ready - Writing to buffer account is complete
+[2026-02-01--14-46-38 INFO txtx::svm::deploy_program] Buffer Authority Transferred - Buffer authority has been transferred to authority signer
+[2026-02-01--14-46-39 INFO txtx::svm::deploy_program] Program Upgraded - Program Ea4nnHJkwpA7Wp5KSE6ZCtL1994YqETAF9Fx8rZFTHrc has been upgraded
+[2026-02-01--14-46-39 INFO txtx::svm::deploy_program] Complete - Ephemeral authority account closed and leftover funds returned to payer
+[2026-02-01--14-46-44 INFO actix_server::worker] shutting down idle worker
+[2026-02-01--14-46-44 INFO actix_server::worker] shutting down idle worker
+[2026-02-01--14-46-44 INFO actix_server::worker] shutting down idle worker
+[2026-02-01--14-46-44 INFO actix_server::worker] shutting down idle worker
+[2026-02-01--14-46-44 INFO actix_server::accept] accept thread stopped
+[2026-02-01--14-46-44 INFO actix_server::worker] shutting down idle worker

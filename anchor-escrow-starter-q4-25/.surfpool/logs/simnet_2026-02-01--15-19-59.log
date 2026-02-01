@@ -1,0 +1,14 @@
+[2026-02-01--15-19-59 INFO actix_server::builder] starting 5 workers
+[2026-02-01--15-19-59 INFO actix_server::server] Tokio runtime found; starting in existing Tokio runtime
+[2026-02-01--15-19-59 INFO actix_server::server] starting service: "actix-web-service-127.0.0.1:18488", workers: 5, listening on: 127.0.0.1:18488
+[2026-02-01--15-20-00 INFO actix_web::middleware::logger] 127.0.0.1 "GET /config HTTP/1.1" 200 167 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.000459
+[2026-02-01--15-20-02 INFO actix_web::middleware::logger] 127.0.0.1 "GET /config HTTP/1.1" 200 167 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.000257
+[2026-02-01--15-20-03 INFO parity_ws] Listening for new connections on 127.0.0.1:8900.
+[2026-02-01--15-20-05 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:60682.
+[2026-02-01--15-20-05 INFO actix_web::middleware::logger] 127.0.0.1 "GET /config HTTP/1.1" 200 167 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.000330
+[2026-02-01--15-21-18 INFO actix_server::worker] shutting down idle worker
+[2026-02-01--15-21-18 INFO actix_server::worker] shutting down idle worker
+[2026-02-01--15-21-18 INFO actix_server::worker] shutting down idle worker
+[2026-02-01--15-21-18 INFO actix_server::accept] accept thread stopped
+[2026-02-01--15-21-18 INFO actix_server::worker] shutting down idle worker
+[2026-02-01--15-21-18 INFO actix_server::worker] shutting down idle worker

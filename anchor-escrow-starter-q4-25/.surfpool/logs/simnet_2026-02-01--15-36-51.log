@@ -1,0 +1,19 @@
+[2026-02-01--15-36-51 INFO actix_server::builder] starting 5 workers
+[2026-02-01--15-36-51 INFO actix_server::server] Tokio runtime found; starting in existing Tokio runtime
+[2026-02-01--15-36-51 INFO actix_server::server] starting service: "actix-web-service-127.0.0.1:18488", workers: 5, listening on: 127.0.0.1:18488
+[2026-02-01--15-36-52 INFO parity_ws] Listening for new connections on 127.0.0.1:8900.
+[2026-02-01--15-36-52 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:42736.
+[2026-02-01--15-36-52 INFO actix_web::middleware::logger] 127.0.0.1 "GET /config HTTP/1.1" 200 167 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.000364
+[2026-02-01--15-36-56 INFO txtx::svm::deploy_program] [Recovery Instructions] - An ephemeral authority account will be created and funded to write to the buffer account.
+[2026-02-01--15-36-56 INFO txtx::svm::deploy_program] [Recovery Instructions] - Please save the following information in case the deployment fails and the account needs to be recovered:
+[2026-02-01--15-36-56 INFO txtx::svm::deploy_program] [Recovery Instructions] - Ephemeral authority public key: BDSFWThGauLR3ZYvPwJMWr66ZEipRQKaFG6DHLyqJFjh
+[2026-02-01--15-36-56 INFO txtx::svm::deploy_program] [Recovery Instructions] - Ephemeral authority secret key: [54, 161, 39, 60, 64, 245, 63, 144, 23, 192, 67, 13, 85, 247, 108, 199, 63, 245, 110, 125, 8, 147, 158, 141, 109, 186, 205, 140, 59, 92, 248, 239, 151, 196, 99, 175, 68, 215, 188, 161, 242, 15, 157, 187, 220, 83, 247, 251, 198, 183, 169, 213, 152, 60, 9, 91, 98, 79, 59, 232, 253, 254, 213, 12]
+[2026-02-01--15-36-58 INFO txtx::svm::deploy_program] Account Created - Ephemeral authority account created and funded to write to buffer
+[2026-02-01--15-36-58 INFO txtx::svm::deploy_program] [Recovery Instructions] - Creating program buffer account at pubkey ByDqadZ88TtGBNP6g9jofzzPu6cRuffSmUXmhJK8xvF8
+[2026-02-01--15-36-58 INFO txtx::svm::deploy_program] Account Created - Program buffer account created
+[2026-02-01--15-37-04 INFO actix_server::worker] shutting down idle worker
+[2026-02-01--15-37-04 INFO actix_server::worker] shutting down idle worker
+[2026-02-01--15-37-04 INFO actix_server::worker] shutting down idle worker
+[2026-02-01--15-37-04 INFO actix_server::worker] shutting down idle worker
+[2026-02-01--15-37-04 INFO actix_server::worker] shutting down idle worker
+[2026-02-01--15-37-04 INFO actix_server::accept] accept thread stopped

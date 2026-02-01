@@ -1,0 +1,20 @@
+[2026-02-01--15-36-34 INFO actix_server::builder] starting 5 workers
+[2026-02-01--15-36-34 INFO actix_server::server] Tokio runtime found; starting in existing Tokio runtime
+[2026-02-01--15-36-34 INFO actix_server::server] starting service: "actix-web-service-127.0.0.1:18488", workers: 5, listening on: 127.0.0.1:18488
+[2026-02-01--15-36-35 INFO actix_web::middleware::logger] 127.0.0.1 "GET /config HTTP/1.1" 200 167 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.000383
+[2026-02-01--15-36-36 INFO parity_ws] Listening for new connections on 127.0.0.1:8900.
+[2026-02-01--15-36-38 INFO parity_ws::io] Accepted a new tcp connection from 127.0.0.1:54300.
+[2026-02-01--15-36-38 INFO actix_web::middleware::logger] 127.0.0.1 "GET /config HTTP/1.1" 200 167 "http://127.0.0.1:18488/" "Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" 0.000337
+[2026-02-01--15-36-40 INFO txtx::svm::deploy_program] [Recovery Instructions] - An ephemeral authority account will be created and funded to write to the buffer account.
+[2026-02-01--15-36-40 INFO txtx::svm::deploy_program] [Recovery Instructions] - Please save the following information in case the deployment fails and the account needs to be recovered:
+[2026-02-01--15-36-40 INFO txtx::svm::deploy_program] [Recovery Instructions] - Ephemeral authority public key: 2nDajidRFScY4jPNDrDHzAvjhRt1XNTbg98zaHKMK4Rv
+[2026-02-01--15-36-40 INFO txtx::svm::deploy_program] [Recovery Instructions] - Ephemeral authority secret key: [128, 166, 72, 134, 217, 126, 247, 57, 15, 248, 92, 77, 202, 181, 7, 67, 38, 2, 128, 120, 182, 90, 240, 165, 30, 214, 68, 201, 123, 24, 144, 107, 26, 113, 12, 169, 232, 55, 115, 119, 195, 218, 236, 15, 32, 203, 104, 237, 144, 75, 133, 243, 201, 75, 236, 135, 108, 170, 189, 188, 199, 117, 115, 225]
+[2026-02-01--15-36-41 INFO txtx::svm::deploy_program] Account Created - Ephemeral authority account created and funded to write to buffer
+[2026-02-01--15-36-41 INFO txtx::svm::deploy_program] [Recovery Instructions] - Creating program buffer account at pubkey DB6BxHHGzmj3PumrHW3N7fXYaYLFou1onD6udrHa4eRs
+[2026-02-01--15-36-42 INFO txtx::svm::deploy_program] Account Created - Program buffer account created
+[2026-02-01--15-36-49 INFO actix_server::worker] shutting down idle worker
+[2026-02-01--15-36-49 INFO actix_server::worker] shutting down idle worker
+[2026-02-01--15-36-49 INFO actix_server::worker] shutting down idle worker
+[2026-02-01--15-36-49 INFO actix_server::accept] accept thread stopped
+[2026-02-01--15-36-49 INFO actix_server::worker] shutting down idle worker
+[2026-02-01--15-36-49 INFO actix_server::worker] shutting down idle worker
