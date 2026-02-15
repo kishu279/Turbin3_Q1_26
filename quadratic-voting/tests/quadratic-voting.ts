@@ -44,7 +44,7 @@ describe("quadratic-voting", () => {
     await provider.connection.requestAirdrop(voter1.publicKey, 1_000_000_000);
     await provider.connection.requestAirdrop(voter2.publicKey, 1_000_000_000);
     await provider.connection.requestAirdrop(voter3.publicKey, 1_000_000_000);
-    
+
     // Wait for airdrops to confirm
     await new Promise((resolve) => setTimeout(resolve, 2000));
 
@@ -54,7 +54,7 @@ describe("quadratic-voting", () => {
       creator,
       creator.publicKey, // mint authority
       null, // freeze authority (null = no freeze)
-      9 // decimals
+      9, // decimals
     );
 
     console.log("Governance Token Mint:", governanceTokenMint.toString());
@@ -65,7 +65,7 @@ describe("quadratic-voting", () => {
       provider.connection,
       creator,
       governanceTokenMint,
-      voter1.publicKey
+      voter1.publicKey,
     );
     voter1TokenAccount = voter1ATA.address;
     await mintTo(
@@ -74,7 +74,7 @@ describe("quadratic-voting", () => {
       governanceTokenMint,
       voter1TokenAccount,
       creator,
-      100_000_000_000 // 100 tokens with 9 decimals
+      100_000_000_000, // 100 tokens with 9 decimals
     );
 
     // Voter 2: 25 tokens (5 voting credits = sqrt(25))
@@ -82,7 +82,7 @@ describe("quadratic-voting", () => {
       provider.connection,
       creator,
       governanceTokenMint,
-      voter2.publicKey
+      voter2.publicKey,
     );
     voter2TokenAccount = voter2ATA.address;
     await mintTo(
@@ -91,7 +91,7 @@ describe("quadratic-voting", () => {
       governanceTokenMint,
       voter2TokenAccount,
       creator,
-      25_000_000_000 // 25 tokens
+      25_000_000_000, // 25 tokens
     );
 
     // Voter 3: 16 tokens (4 voting credits = sqrt(16))
@@ -99,7 +99,7 @@ describe("quadratic-voting", () => {
       provider.connection,
       creator,
       governanceTokenMint,
-      voter3.publicKey
+      voter3.publicKey,
     );
     voter3TokenAccount = voter3ATA.address;
     await mintTo(
@@ -108,7 +108,7 @@ describe("quadratic-voting", () => {
       governanceTokenMint,
       voter3TokenAccount,
       creator,
-      16_000_000_000 // 16 tokens
+      16_000_000_000, // 16 tokens
     );
 
     // DERIVED PDAS
@@ -117,12 +117,6 @@ describe("quadratic-voting", () => {
       program.programId,
     );
     dao = daoPda;
-
-    const [proposalPda] = await anchor.web3.PublicKey.findProgramAddress(
-      [Buffer.from("proposal"), dao.toBuffer(), Buffer.from(proposalName)],
-      program.programId,
-    );
-    proposal = proposalPda;
   });
 
   it("Initialize the dao", async () => {
@@ -135,6 +129,31 @@ describe("quadratic-voting", () => {
       })
       .signers([creator])
       .rpc();
+
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+
+    // Fetch DAO to get current proposal count
+    const daoAccount = await program.account.dao.fetch(dao);
+    console.log("DAO proposal count:", daoAccount.proposalCount.toString());
+
+    // Derive proposal PDA using the current proposal count (before increment)
+    // Note: The count will be incremented when creating the proposal
+    const proposalCountBuffer = Buffer.alloc(8);
+    proposalCountBuffer.writeBigUInt64LE(
+      BigInt(daoAccount.proposalCount.toString()),
+    );
+
+    const [proposalPda] = await anchor.web3.PublicKey.findProgramAddress(
+      [
+        Buffer.from("proposal"),
+        dao.toBuffer(),
+        proposalCountBuffer,
+        Buffer.from(proposalName),
+      ],
+      program.programId,
+    );
+    proposal = proposalPda;
+    console.log("Derived proposal PDA:", proposal.toString());
   });
 
   it("Create a proposal", async () => {
@@ -154,7 +173,7 @@ describe("quadratic-voting", () => {
     // Derive vote PDA for voter1
     const [vote1Pda] = await anchor.web3.PublicKey.findProgramAddress(
       [Buffer.from("vote"), voter1.publicKey.toBuffer(), proposal.toBuffer()],
-      program.programId
+      program.programId,
     );
 
     // Voter 1 votes YES with 100 tokens (10 voting credits = sqrt(100))
@@ -179,7 +198,7 @@ describe("quadratic-voting", () => {
     // Derive vote PDA for voter2
     const [vote2Pda] = await anchor.web3.PublicKey.findProgramAddress(
       [Buffer.from("vote"), voter2.publicKey.toBuffer(), proposal.toBuffer()],
-      program.programId
+      program.programId,
     );
 
     // Voter 2 votes NO with 25 tokens (5 voting credits = sqrt(25))

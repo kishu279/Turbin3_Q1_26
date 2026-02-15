@@ -7,12 +7,14 @@ In your quadratic voting program, you need token accounts to track how many gove
 ## Two Types of Token Accounts
 
 ### 1. **Associated Token Account (ATA)** ✅ RECOMMENDED
+
 - **Deterministic PDA** derived from: `[owner_pubkey, token_program_id, mint_pubkey]`
 - Each user has **exactly one ATA per token mint**
 - Standard across Solana ecosystem
 - Expected by wallets, DEXs, and most programs
 
 ### 2. **Regular Token Account**
+
 - Can be any keypair or custom PDA
 - Used for special cases (escrow accounts, vaults, program-owned accounts)
 - Requires manual management
@@ -31,6 +33,7 @@ pub voter_token_account: Account<'info, TokenAccount>,
 ```
 
 **What this does:**
+
 - Validates the account is an ATA
 - Ensures it's for the correct mint (`token_mint`)
 - Ensures it's owned by the correct authority (`voter`)
@@ -46,7 +49,7 @@ const voterATA = await getOrCreateAssociatedTokenAccount(
   connection,
   payer,
   mintAddress,
-  voterPublicKey
+  voterPublicKey,
 );
 
 // The ATA address is deterministic:
@@ -56,6 +59,7 @@ const voterATA = await getOrCreateAssociatedTokenAccount(
 ## How ATAs are Derived
 
 ### Formula:
+
 ```
 ATA_ADDRESS = findProgramAddress(
   [
@@ -68,6 +72,7 @@ ATA_ADDRESS = findProgramAddress(
 ```
 
 ### Example (your test):
+
 ```typescript
 // These three pieces of information uniquely identify the ATA:
 // 1. Owner: voter1.publicKey
@@ -77,13 +82,14 @@ ATA_ADDRESS = findProgramAddress(
 // The ATA address is computed deterministically:
 const voter1ATA = getAssociatedTokenAddressSync(
   governanceTokenMint,
-  voter1.publicKey
+  voter1.publicKey,
 );
 ```
 
 ## Complete Flow in Your Program
 
 ### 1. Setup Phase (in tests)
+
 ```typescript
 // Create governance token mint
 const mint = await createMint(connection, payer, mintAuthority, null, 9);
@@ -93,7 +99,7 @@ const voterATA = await getOrCreateAssociatedTokenAccount(
   connection,
   payer,
   mint,
-  voterPublicKey
+  voterPublicKey,
 );
 
 // Mint tokens to voter's ATA
@@ -101,6 +107,7 @@ await mintTo(connection, payer, mint, voterATA.address, mintAuthority, 100);
 ```
 
 ### 2. Voting Phase (in program)
+
 ```rust
 // Read token balance from ATA
 let token_amount = self.voter_token_account.amount;
@@ -115,12 +122,14 @@ self.vote_account.vote_credits = voting_credits;
 ## Key Concepts
 
 ### Why ATAs?
+
 1. **Predictable**: Same inputs → same address (every time)
 2. **Standard**: All Solana wallets/programs expect ATAs
 3. **One per mint**: Simplifies token management
 4. **Secure**: Owned by user, validated by program
 
 ### Token Amount & Decimals
+
 ```typescript
 // If mint has 9 decimals:
 100 tokens = 100_000_000_000 (raw amount)
@@ -130,7 +139,9 @@ sqrt(100_000_000_000) = 316_227 voting credits
 ```
 
 ### Account Validation
+
 The constraint `associated_token::mint = token_mint` ensures:
+
 - ✅ Account is a valid ATA
 - ✅ ATA is for the correct token mint
 - ✅ ATA is owned by the signer (voter)
@@ -140,6 +151,7 @@ The constraint `associated_token::mint = token_mint` ensures:
 ## Common Patterns
 
 ### Pattern 1: User-owned ATA (your case)
+
 ```rust
 #[account(
     mut,
@@ -150,6 +162,7 @@ pub user_token_account: Account<'info, TokenAccount>,
 ```
 
 ### Pattern 2: Program-owned vault (for escrow)
+
 ```rust
 #[account(
     init,
@@ -178,14 +191,17 @@ anchor test
 ## Troubleshooting
 
 ### Error: "associated token account constraint violated"
+
 - **Cause**: Provided account is not an ATA or for wrong mint
 - **Solution**: Use `getOrCreateAssociatedTokenAccount()` in tests
 
 ### Error: "constraint has one authority"
+
 - **Cause**: ATA owner doesn't match expected authority
 - **Solution**: Ensure ATA is owned by the voter/signer
 
 ### Error: "insufficient funds"
+
 - **Cause**: Voter's ATA has no tokens
 - **Solution**: Mint tokens to ATA before voting
 

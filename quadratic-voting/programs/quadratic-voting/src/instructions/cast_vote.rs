@@ -48,7 +48,7 @@ impl<'info> CastVote<'info> {
     pub fn cast_vote(&mut self, vote_type: u8, bump: &CastVoteBumps) -> Result<()> {
         // Get token amount from voter's ATA
         let token_amount = self.voter_token_account.amount;
-        
+
         // Quadratic voting: voting credits = sqrt(token_amount)
         let voting_credits = (token_amount as f64).sqrt() as u64;
 

@@ -12,16 +12,16 @@ pub use state::*;
 pub mod quadratic_voting {
     use super::*;
 
-    pub fn initializeDao(ctx: Context<InitDao>, name: String) -> Result<()> {
-        ctx.accounts.init(name, &ctx.bumps);
+    pub fn initialize_dao(ctx: Context<InitDao>, name: String) -> Result<()> {
+        ctx.accounts.init(name, &ctx.bumps)?;
         Ok(())
     }
-    pub fn initializeProposal(ctx: Context<InitProposal>, metadata: String) -> Result<()> {
-        ctx.accounts.init(metadata, &ctx.bumps);
+    pub fn initialize_proposal(ctx: Context<InitProposal>, metadata: String) -> Result<()> {
+        ctx.accounts.init(metadata, &ctx.bumps)?;
         Ok(())
     }
-    pub fn castVote(ctx: Context<CastVote>, vote_type: u8) -> Result<()> {
-        ctx.accounts.cast_vote(vote_type, &ctx.bumps);
+    pub fn cast_vote(ctx: Context<CastVote>, vote_type: u8) -> Result<()> {
+        ctx.accounts.cast_vote(vote_type, &ctx.bumps)?;
         Ok(())
     }
 }

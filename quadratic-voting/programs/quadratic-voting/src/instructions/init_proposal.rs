@@ -3,6 +3,7 @@ use anchor_lang::prelude::*;
 use crate::state::{Dao, Proposal};
 
 #[derive(Accounts)]
+#[instruction(metadata: String)]
 pub struct InitProposal<'info> {
     #[account(mut)]
     pub creator: Signer<'info>,
@@ -14,7 +15,7 @@ pub struct InitProposal<'info> {
         init,
         payer = creator,
         space = Proposal::DISCRIMINATOR.len() + Proposal::INIT_SPACE,
-        seeds = [b"proposal", dao_account.key().as_ref(),dao_account.proposal_count.to_le_bytes().as_ref()],
+        seeds = [b"proposal", dao_account.key().as_ref(),dao_account.proposal_count.to_le_bytes().as_ref(), metadata.as_bytes()],
         bump
     )]
     pub proposal_account: Account<'info, Proposal>,
